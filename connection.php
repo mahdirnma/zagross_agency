@@ -7,11 +7,8 @@ class connection{
 
     public function connected()
     {
-
         $pdo=new PDO("mysql:host=$this->dbserver;dbname=$this->dbname",$this->username,$this->password);
         $pdo->exec("set names utf8mb4");
         return $pdo;
     }
-
-
 }
