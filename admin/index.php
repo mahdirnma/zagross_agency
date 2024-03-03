@@ -6,12 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zagross Admins</title>
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
 <div class="header">
     <h1>LOGIN</h1>
-    <form action="" method="post">
+    <form action="login_process.php" method="post">
         <label for="username">UserName</label>
         <input type="text" name="username" id="username">
         <label for="password">Password</label>
