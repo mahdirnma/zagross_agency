@@ -1,7 +1,3 @@
-<?php
-require_once "Admin.php";
-$admin=new Admin("tours");
-?>
 <!doctype html>
 <html lang="en">
 <head>

@@ -32,7 +32,7 @@ $admin=new Admin("tours");
                 echo "
                 <tr>
                 <td><a href='delete_process.php?id={$tour["id"]}'><img src='../images/delete.svg' alt='delete'></a></td>
-                <td><a href='admin_panel.php?id={$tour["id"]}'><img src='../images/update.svg' alt='update'></a></td>
+                <td><a href='update.php?id={$tour["id"]}'><img src='../images/update.svg' alt='update'></a></td>
                 <td>{$tour["hardness_id"]}</td>
                 <td>{$tour["price"]}</td>
                 <td>{$tour["days"]}</td>
