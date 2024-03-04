@@ -13,5 +13,8 @@ abstract class Model extends connection{
     {
         return $this->conn->query("SELECT * FROM $this->table");
     }
+    abstract function update();
+    abstract function delete();
+    abstract function insert();
 
 }

@@ -13,7 +13,7 @@ foreach ($admin->select() as $user){
     }
 }
 if ($status){
-    header("Location: admin_panel.php?id=".$admin_id);
+    header("Location: admin_panel.php");
 }else{
     header("Location: index.php");
 }
