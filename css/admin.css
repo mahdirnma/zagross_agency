@@ -94,3 +94,28 @@
     justify-content: flex-start;
     padding-top: 2%;
 }
+.header-border>.add-tour-border>input{
+    width: 50%;
+    height: 40px;
+    margin: 5px 0 35px 0;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.header-border>.add-tour-border>label{
+    color: #b7b7b7;
+    font-size: 25px;
+    font-weight: bolder;
+ }
+.header-border>.add-tour-border>input:last-of-type{
+    cursor: pointer;
+    padding: 0;
+    width: 8vw;
+    height: 3.5vw;
+    font-size: 17px;
+    transition: background-color 0.3s,color 0.3s;
+}
+.header-border>.add-tour-border>input:last-of-type:hover{
+    color: white;
+    background-color: #272727;
+}

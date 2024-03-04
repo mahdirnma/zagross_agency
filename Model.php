@@ -15,6 +15,6 @@ abstract class Model extends connection{
     }
     abstract function update();
     abstract function delete();
-    abstract function insert();
+    abstract function insert($data);
 
 }

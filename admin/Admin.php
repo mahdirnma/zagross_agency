@@ -12,8 +12,7 @@ class Admin extends Model {
         // TODO: Implement delete() method.
     }
 
-    function insert()
-    {
-        // TODO: Implement insert() method.
+    function insert($data){
+        $this->conn->exec("INSERT INTO `tours`(`title`, `description`, `start_day`, `days`, `price`, `hardness_id`) VALUES ('{$data["title"]}','{$data["description"]}','{$data["start"]}','{$data["duration"]}','{$data["price"]}','{$data["hardness"]}')");
     }
 }

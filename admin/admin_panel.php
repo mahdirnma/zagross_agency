@@ -47,7 +47,7 @@ $admin=new Admin("tours");
     </div>
     <div class="dashboard">
         <a href="admin_panel.php">مشاهده تورها</a>
-        <a href="admin_panel.php">اضافه کردن تور</a>
+        <a href="insert.php">اضافه کردن تور</a>
     </div>
 </div>
 </body>
