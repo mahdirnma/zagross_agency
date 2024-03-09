@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="header-border">
-    <form method="post" action="insert_process.php" class="add-tour-border">
+    <form method="post" action="insert_process.php" class="add-tour-border" enctype="multipart/form-data">
         <label for="title">نام تور</label>
         <input type="text" id="title" name="title" placeholder="نام تور" dir="rtl">
         <label for="description">توضیحات تور</label>
@@ -23,6 +23,9 @@
         <input type="number" id="price" name="price" placeholder="هزینه تور" dir="rtl">
         <label for="hardness">درجه سختی تور</label>
         <input type="number" id="hardness" name="hardness" placeholder="درجه سختی تور" dir="rtl">
+
+        <label for="fileToUpload">تصویر تور</label>
+        <input type="file" id="fileToUpload" name="fileToUpload" placeholder="تصویر تور" dir="rtl">
         <input type="submit" value="اضافه کردن">
     </form>
     <div class="dashboard">

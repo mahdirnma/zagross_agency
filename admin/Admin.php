@@ -13,7 +13,7 @@ class Admin extends Model {
     }
 
     function insert($data){
-        $this->conn->exec("INSERT INTO `tours`(`title`, `description`, `start_day`, `days`, `price`, `hardness_id`) VALUES ('{$data["title"]}','{$data["description"]}','{$data["start"]}','{$data["duration"]}','{$data["price"]}','{$data["hardness"]}')");
+        $this->conn->exec("INSERT INTO `tours`(`title`, `description`, `start_day`, `days`, `price`, `hardness_id`, `image`) VALUES ('{$data["title"]}','{$data["description"]}','{$data["start"]}','{$data["duration"]}','{$data["price"]}','{$data["hardness"]}','{$data["image"]}')");
     }
 
     public function select_special($id){

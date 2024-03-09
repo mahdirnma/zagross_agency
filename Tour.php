@@ -6,17 +6,17 @@ class Tour extends Model{
         return $this->conn->query("SELECT * FROM $this->table WHERE title LIKE '%$data%'");
     }
 
-    function update()
+    function update($data)
     {
         // TODO: Implement update() method.
     }
 
-    function delete()
+    function delete($id)
     {
         // TODO: Implement delete() method.
     }
 
-    function insert()
+    function insert($data)
     {
         // TODO: Implement insert() method.
     }

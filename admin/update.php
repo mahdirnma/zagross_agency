@@ -38,6 +38,8 @@ foreach ($selected_tour as $row){
         <input type="number" id="price" name="price" placeholder="هزینه تور" value="<?=$tour["price"]?>" dir="rtl">
         <label for="hardness">درجه سختی تور</label>
         <input type="number" id="hardness" name="hardness" placeholder="درجه سختی تور" value="<?=$tour["hardness"]?>" dir="rtl">
+        <label for="fileToUpload">تصویر تور</label>
+        <input type="file" id="fileToUpload" name="fileToUpload" placeholder="تصویر تور" dir="rtl">
         <input type="hidden" id="id" name="id" value="<?=$id?>">
         <input type="submit" value="آپدیت تور">
     </form>

@@ -69,10 +69,10 @@ $tour=new Tour("tours");
         foreach ($tour->search($title) as $row){
            echo "<div class='inner-last-tour'>
                  <p>{$row["start_day"]}</p>
-                 <img src='images/tour1.png' alt='tour'>
+                 <img src='uploads/{$row["image"]}' alt='tour'>
                  <div>
                  <p>{$row["days"]} روز</p>
-                                 <p> سختی {$row["days"]}/5</p>
+                 <p> سختی {$row["days"]}/5</p>
 </div>
 <div>
 <p>{$row["title"]}</p>
