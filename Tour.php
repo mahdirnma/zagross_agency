@@ -20,4 +20,9 @@ class Tour extends Model{
     {
         // TODO: Implement insert() method.
     }
+
+    public function select_special()
+    {
+        return $this->conn->query("SELECT * FROM $this->table ORDER BY id DESC LIMIT 3");
+    }
 }

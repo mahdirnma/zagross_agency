@@ -65,7 +65,7 @@ $tour=new Tour("tours");
     <div class="between"></div>
     <div class="last-tour">
         <?php
-        foreach ($tour->select() as $row){
+        foreach ($tour->select_special() as $row){
            echo "<div class='inner-last-tour'>
                  <p>{$row["start_day"]}</p>
                  <img src='uploads/{$row["image"]}' alt='tour'>
