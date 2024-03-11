@@ -4,7 +4,7 @@ class Admin extends Model {
 
     function update($data)
     {
-        $this->conn->query("UPDATE `tours` SET `title`='{$data["title"]}',`description`='{$data["description"]}',`start_day`='{$data["start"]}',`days`='{$data["duration"]}',`price`='{$data["price"]}',`hardness_id`='{$data["hardness"]}' WHERE id={$data["id"]}");
+        $this->conn->query("UPDATE `tours` SET `title`='{$data["title"]}',`description`='{$data["description"]}',`start_day`='{$data["start"]}',`days`='{$data["duration"]}',`price`='{$data["price"]}',`hardness_id`='{$data["hardness"]}',`image`='{$data["image"]}' WHERE id={$data["id"]}");
     }
 
     function delete($id)

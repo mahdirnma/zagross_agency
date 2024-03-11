@@ -25,7 +25,7 @@ foreach ($selected_tour as $row){
 </head>
 <body>
 <div class="header-border">
-    <form method="post" action="update_process.php" class="add-tour-border">
+    <form method="post" action="update_process.php" class="add-tour-border" enctype="multipart/form-data">
         <label for="title">نام تور</label>
         <input type="text" id="title" name="title" placeholder="نام تور" value="<?=$tour["title"]?>" dir="rtl">
         <label for="description">توضیحات تور</label>
