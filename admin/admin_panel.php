@@ -44,6 +44,7 @@ $admin=new Admin("tours");
             }
             ?>
         </table>
+        <a href="logout_process.php">Logout</a>
     </div>
     <div class="dashboard">
         <a href="admin_panel.php">مشاهده تورها</a>

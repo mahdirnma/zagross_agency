@@ -1,5 +1,7 @@
 <?php
+session_start();
 require_once "Admin.php";
+$session=$_SESSION["login"];
 $userName=$_POST["username"];
 $password=$_POST["password"];
 $admin=new Admin("admins");
@@ -12,8 +14,9 @@ foreach ($admin->select() as $user){
         break;
     }
 }
-if ($status){
+var_dump($session);
+if ($status && $session="true" && isset($session)){
     header("Location: admin_panel.php");
-}else{
+}else if (!$status || $session!="true"){
     header("Location: index.php");
 }
