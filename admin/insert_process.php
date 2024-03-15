@@ -1,5 +1,6 @@
 <?php
-require_once "Admin.php";
+echo $_POST["hardness"];
+/*require_once "Admin.php";
 
 
 $target_dir = "../uploads/";
@@ -65,4 +66,4 @@ $admin->insert(["title"=>$title,
     "price"=>$price,
     "hardness"=>$hardness,
     "image"=>$image]);
-header("Location: admin_panel");
+header("Location: admin_panel");*/

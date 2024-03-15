@@ -1,6 +1,8 @@
-<?php
+<?php session_start();
+if (!isset($_SESSION["login"]) || $_SESSION["login"]!="true"){
+    header("Location: index.php");
+}
 require_once "Admin.php";
-
 $target_dir = "../uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;

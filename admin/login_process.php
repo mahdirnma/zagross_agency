@@ -1,7 +1,9 @@
-<?php
-session_start();
+<?php session_start();
+$check=false;
+if (isset($_POST["username"]) && isset($_POST["password"]) && !empty($_POST["username"]) && !empty($_POST["password"])){
+    $check=true;
+}
 require_once "Admin.php";
-$session=$_SESSION["login"];
 $userName=$_POST["username"];
 $password=$_POST["password"];
 $admin=new Admin("admins");
@@ -14,9 +16,10 @@ foreach ($admin->select() as $user){
         break;
     }
 }
-var_dump($session);
-if ($status && $session="true" && isset($session)){
+if ($status && $check){
+    //generate session
+    $_SESSION["login"]="true";
     header("Location: admin_panel.php");
-}else if (!$status || $session!="true"){
+}else{
     header("Location: index.php");
 }
