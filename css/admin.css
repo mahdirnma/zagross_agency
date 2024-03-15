@@ -5,7 +5,7 @@
 }
 .header-border{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background: linear-gradient(
@@ -16,7 +16,7 @@
 }
 .header-border>.dashboard{
     width: 20%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,10 +70,19 @@
     font-size: 24px;
     font-weight: bolder;
 }
-.header-border>.tours-border>table .table-border>td:nth-of-type(1),.header-border>.tours-border>table .table-border>td:nth-of-type(2),.header-border>.tours-border>table .table-border>td:nth-of-type(9){
+.header-border>.tours-border>table .table-border>td:nth-of-type(1),.header-border>.tours-border>table .table-border>td:nth-of-type(2){
     width: 100px;
 }
-.header-border>.tours-border .table-border>td:nth-of-type(7){
+.header-border>.tours-border>table .table-border>td:nth-of-type(10){
+    width: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #ff7f0d;
+}
+.header-border>.tours-border>table .table-border>td:nth-of-type(3) a{
+    width: 100px;
+}
+.header-border>.tours-border .table-border>td:nth-of-type(8){
     width: 300px;
 }
 .header-border>.tours-border .tours a{
@@ -83,8 +92,11 @@
     align-items: center;
     justify-content: center;
 }
-.header-border>.tours-border .tours a>img{
+.header-border>.tours-border .tours a>.tour-icon{
     width: 50px;
+}
+.tour-img{
+    width: 100%;
 }
 .header-border>.add-tour-border{
     width: 80%;

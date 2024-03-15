@@ -22,6 +22,7 @@ $admin=new Admin("tours");
             <tr class="table-border">
                 <td>حذف</td>
                 <td>ویرایش</td>
+                <td>تصویر</td>
                 <td>درجه سختی</td>
                 <td>هزینه</td>
                 <td>تعداد روز</td>
@@ -34,8 +35,9 @@ $admin=new Admin("tours");
             foreach ($admin->select() as $tour){
                 echo "
                 <tr>
-                <td><a href='delete_process.php?id={$tour["id"]}'><img src='../images/delete.svg' alt='delete'></a></td>
-                <td><a href='update.php?id={$tour["id"]}'><img src='../images/update.svg' alt='update'></a></td>
+                <td><a href='delete_process.php?id={$tour["id"]}'><img src='../images/delete.svg' alt='delete' class='tour-icon'></a></td>
+                <td><a href='update.php?id={$tour["id"]}'><img src='../images/update.svg' alt='update' class='tour-icon'></a></td>
+                <td><a href='../uploads/{$tour["image"]}' target='_blank'><img src='../uploads/{$tour["image"]}' alt='tour' class='tour-img'></a></td>
                 <td>{$tour["hardness_id"]}</td>
                 <td>{$tour["price"]}</td>
                 <td>{$tour["days"]}</td>
