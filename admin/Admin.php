@@ -19,4 +19,13 @@ class Admin extends Model {
     public function select_special($id){
         return $this->conn->query("SELECT * FROM $this->table WHERE id=".$id);
     }
+    public function login($username,$password)
+    {
+        $password=md5($password);
+        return $this->conn->query("SELECT * FROM $this->table WHERE username='$username' AND password='$password'");
+    }
+    public function loginWithId($id)
+    {
+        return $this->conn->query("SELECT * FROM $this->table WHERE id='$id'");
+    }
 }
